@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffc61a;
+}
+
+.container-fluid {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1100px !important;
+    min-height: calc(100vh - 80px) !important;
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        min-height: calc(100vh - 50px) !important;
+    }
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: calc(100vh);
+}
+
+/* HEADER */
+.header {
+    background-image: url(../img/sluzhbyi-taksi.png);
+    background-size: cover;
+    background-position: center;
+}
+
+ul,
+li {
+    display: inline;
+    padding: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0 5px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 30px 30px;
+}
+
+.menu-button {
+    display: inline-block;
+    color: black;
+    background-color: #ffc61a;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.menu-button a {
+    text-decoration: none;
+    color: black;
+}
+
+/* MAIN */
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #ffffff;
+    margin: 30px 0;
+    height: 100% !important;
+    overflow: hidden;
+}
+
+@media (max-width: 600px) {
+    .main {
+        margin: 0;
+    }
+}
+
+.title-registration {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+}
+
+.form {
+    padding: 10px;
+}
+
+.block {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 600px) {
+    .block {
+        flex-direction: column;
+    }
+}
+
+.subblock {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    border: none;
+    box-shadow: 0px 10px 0px -5px rgba(0, 0, 0, 0.38);
+}
+
+.form-control::placeholder {
+    font-weight: normal;
+    color: #4b4b4b;
+    font-size: 16px;
+}
+
+.form-control:focus {
+    outline: none;
+    box-shadow: 0px 10px 0px -5px #ffc61a;
+}
+
+.btn {
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+}
